@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Pacifico&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+}
+
+.clip{
+    height: 2px;
+    border-radius: 10px;
+}
+#clip1{
+    background: linear-gradient(to right, white 95%,  #082032 5%);
+}
+#clip2{
+    background: linear-gradient(to right, white 50%,  #082032 50%);
+}
+#clip{
+    background: linear-gradient(to right, white 60%,  #082032 40%);
+}
+#clip3{
+    background: linear-gradient(to right, white 70%,  #082032 30%);
+}
+#clip4{
+    background: linear-gradient(to right, white 65%,  #082032 35%);
+}
+#clip5{
+    background: linear-gradient(to right, white 30%,  #082032 70%);
+}
