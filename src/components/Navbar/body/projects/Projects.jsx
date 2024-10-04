@@ -38,7 +38,7 @@ const Projects = () => {
         <h1 className='text-[3rem] underline-offset-4 underline text-center'>Projects</h1>
         <div className="grid md:grid-cols-2 grid-cols-1 justify-center  gap-4">
           {projectArr?.map((item, index) => (
-            <div className="border-[#606A92] border-[1px] p-2 max-h-[30rem] rounded-sm">
+            <div className="border-[#606A92] border-[1px] p-2  rounded-sm">
               <img src={item?.img} alt="" className="h-[15rem] w-full object-fill my-2" />
               <div>
                 <div>
