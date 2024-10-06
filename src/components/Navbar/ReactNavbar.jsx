@@ -1,21 +1,29 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { FiSun } from "react-icons/fi";
 import { IoMdMoon } from "react-icons/io";
 import { AiOutlineClose } from "react-icons/ai";
 import { IoMenuSharp } from "react-icons/io5";
-import { changeBg } from '../../redux/features';
+import { changeBg, setTargetSection } from '../../redux/features';
 import { useDispatch, useSelector } from 'react-redux';
-
 const ReactNavbar = () => {
-  const { isChanged } = useSelector(state => state.features)
+    const dispatch = useDispatch();
+    const { isChanged, targetSection } = useSelector(state => state.features)
     const [isDropDown, setisDropDown] = useState(false)
-    const dispatch = useDispatch()
-    function handleChage() {
+    function handleChage(ref) {
         dispatch(changeBg())
     }
+    console.log(targetSection);
+    
     const dropDown = function () {
         setisDropDown(!isDropDown)
     }
+    const NavDropDown = function (ref) {
+        setisDropDown(!isDropDown)
+        dispatch(setTargetSection(ref))
+    }
+    const scrollToSection = (ref) => {
+        dispatch(setTargetSection(ref))
+    };
     const listArr = ['About me', 'Projects', 'Skills', 'Links'];
     return (
         <>
@@ -29,7 +37,7 @@ const ReactNavbar = () => {
                             <div className='md:block hidden'>
                                 <ul className='flex justify-between cursor-pointer items-center gap-4 text-[1.4rem]'>
                                     {listArr?.map((item, index) => (
-                                        <li key={index}>{item}</li>
+                                        <li key={index} onClick={() =>scrollToSection(item)}>{item}</li>
                                     ))}
                                 </ul>
                             </div>
@@ -53,7 +61,7 @@ const ReactNavbar = () => {
                     className={`md:hidden origin-top transition-all text-white duration-500 ease-in-out ${isDropDown ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0'} transform-gpu absolute z-10 bg-[#1c4b82] w-full`}>
                     <ul className='p-4'>
                         {listArr?.map((item, index) => (
-                            <li key={index} className='hover:bg-black rounded-sm p-2 cursor-pointer py-2' onClick={dropDown}>{item}</li>
+                            <li key={index} className='hover:bg-black rounded-sm p-2 cursor-pointer py-2' onClick={()=>NavDropDown(item)}>{item}</li>
                         ))}
                     </ul>
                 </div>
