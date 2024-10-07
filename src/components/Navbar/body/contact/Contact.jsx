@@ -2,7 +2,6 @@ import { useSelector } from "react-redux"
 
 const Contact = () => {
     const { isChanged } = useSelector(state => state.features)
-    console.log(isChanged);
     
     return (
         <>

@@ -7,7 +7,7 @@ import Footer from './components/footer/Footer'
 const App = () => {
   const [value, setValue] = useState(0)
   const inputRef = useRef(0)
-  const { isChanged, targetSection } = useSelector(state => state.features)
+  const { isChanged } = useSelector(state => state.features)
   let bg = isChanged ? '#ffffff' : '#082032'
   let textColor = isChanged ? '#082032' : '#ffffff'
   return (

@@ -29,3 +29,14 @@
 #clip5{
     background: linear-gradient(to right, white 30%,  #082032 70%);
 }
+.nav-item :hover{
+    padding-bottom: 5px;
+    border-bottom: 3px solid #E26443;
+    color: #E26443;
+
+}
+.nav-item .active{
+    padding-bottom: 5px;
+    border-bottom: 3px solid #E26443;
+    color: #E26443;
+}
