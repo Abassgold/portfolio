@@ -9,7 +9,7 @@ const Body = () => {
         <>
             <section className='py-[4rem]'>
                 <h1 className='text-center text-[3rem]'>Welcome!</h1>
-                <img src="https://yt3.ggpht.com/dpAh_e6itIQV_J_94PKD45wdvEzhedT_qHGaVhLJYsiFGdaRkSnPdGPAreYsVJBEPsVfSxAMiQ=s108-c-k-c0x00ffffff-no-rj" alt="" className='rounded-full border-[5px] border-[red] mx-auto my-[2rem] h-[20rem] w-[20rem] object-contain ' />
+                <img src="https://res.cloudinary.com/abasskola/image/upload/v1728502396/channels4_profile_1_nvu567.jpg" alt="" className='rounded-full border-[5px] border-[red] mx-auto my-[2rem] h-[20rem] w-[20rem] object-contain ' />
                 <div id='About me'>
                     <p className=' text-balance text-center text-[1.5rem]'>
                         <span className='text-[2rem] font-[600]'>Hello, I'm Azeez Abass, a full-stack MERN developer based in Nigeria.</span><br />
