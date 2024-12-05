@@ -63,13 +63,13 @@ const ReactNavbar = () => {
                     className={`md:hidden origin-top transition-all text-white duration-500 ease-in-out ${isDropDown ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0'} transform-gpu absolute z-10 bg-[#1c4b82] w-full`}>
                     <ul className='p-4'>
                         {listArr?.map((item, index) => (
-                            <li key={index} onClick={() => NavDropDown(item)}>
-                                <Link to={item} spy={true} smooth={true} duration={500} offset={-100} className='hover:bg-black p-2 rounded-sm cursor-pointer block'>
+                            <li key={index}  className=''>
+                                <Link to={item} spy={true} smooth={true} duration={500} offset={-100} className='hover:bg-black p-2 rounded-sm cursor-pointer block' onClick={dropDown}>
                                     {item}
                                 </Link>
                             </li>
                         ))}
-                        <li className='bg-[#E5340F] text-[#444444] rounded-sm mt-3 p-2 cursor-pointer shadow-lg'>
+                        <li className='bg-[#E5340F] text-[#444444] rounded-sm mt-3 p-2 cursor-pointer shadow-lg' onClick={dropDown}>
                             Resume
                         </li>
                     </ul>

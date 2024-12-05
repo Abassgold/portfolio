@@ -9,7 +9,7 @@ const Footer = () => {
     return (
         <>
             <p className='text-[2.5rem] py-1 font-[700]'>Let's Collaborate!</p>
-            <small className=' text-[1.2rem]'>2023 © All right Reserved</small>
+            <small className=' text-[1.2rem]'>2024 © All right Reserved</small>
             <small className=' text-[1.2rem] block mb-1'>Azeez Abass</small>
             <div className='py-2 text-[1.5rem]'>
                 <div className='flex justify-center items-center gap-[2rem]'>
