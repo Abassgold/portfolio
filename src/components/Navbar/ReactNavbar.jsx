@@ -40,7 +40,11 @@ const ReactNavbar = () => {
                                         </li>
                                     ))}
                                     <li>
-                                        <button className=' bg-[#E5340F] duration-500 p-2 hover:text-[#444444] hover:bg-[#F17771] font-[poppins] text-[1rem] rounded-md shadow-lg'>Resume</button>
+                                        <a href="https://drive.google.com/file/d/1PP5pYGdPWNV86LlNOBZZLzEcDd7Uu2gK/view?usp=sharing" target="_blank" rel="noopener noreferrer" className=' bg-[#E5340F] duration-500 p-2 hover:text-[#444444] hover:bg-[#F17771] font-[poppins] text-[1rem] rounded-md shadow-lg'>
+                                            <button >
+                                                Resume
+                                            </button>
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
@@ -63,15 +67,17 @@ const ReactNavbar = () => {
                     className={`md:hidden origin-top transition-all text-white duration-500 ease-in-out ${isDropDown ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0'} transform-gpu absolute z-10 bg-[#1c4b82] w-full`}>
                     <ul className='p-4'>
                         {listArr?.map((item, index) => (
-                            <li key={index}  className=''>
+                            <li key={index} className=''>
                                 <Link to={item} spy={true} smooth={true} duration={500} offset={-100} className='hover:bg-black p-2 rounded-sm cursor-pointer block' onClick={dropDown}>
                                     {item}
                                 </Link>
                             </li>
                         ))}
-                        <li className='bg-[#E5340F] text-[#444444] rounded-sm mt-3 p-2 cursor-pointer shadow-lg' onClick={dropDown}>
-                            Resume
-                        </li>
+                        <a href="https://drive.google.com/file/d/1PP5pYGdPWNV86LlNOBZZLzEcDd7Uu2gK/view?usp=sharing" target="_blank" rel="noopener noreferrer" className='bg-[#E5340F] text-[#444444] rounded-sm mt-3 p-2 cursor-pointer shadow-lg' onClick={dropDown}>
+                            <li >
+                                Resume
+                            </li>
+                        </a>
                     </ul>
                 </div>
             </section>

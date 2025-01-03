@@ -11,8 +11,8 @@ const Body = () => {
                 <h1 className='text-center text-[3rem]'>Welcome!</h1>
                 <img src="https://res.cloudinary.com/abasskola/image/upload/v1728502396/channels4_profile_1_nvu567.jpg" alt="" className='rounded-full border-[5px] border-[red] mx-auto my-[2rem] h-[20rem] w-[20rem] object-contain ' />
                 <div id='About me'>
-                    <p className=' text-balance text-center text-[1.5rem]'>
-                        <span className='text-[2rem] font-[600]'>Hello, I'm Azeez Abass, a full-stack MERN developer based in Nigeria.</span><br />
+                    <p className=' text-justify  text-[1.5rem]'>
+                        <p className='text-[2rem] font-[600] text-center'>Hello, I'm Azeez Abass, a full-stack MERN developer based in Nigeria.</p>
                         I specialize in both frontend and backend development, with expertise in HTML, CSS, JavaScript, React/Next.js, Node.js, Express, and MongoDB. I’m passionate about building modern, responsive web applications that deliver exceptional user experiences. I’m currently open to full-time opportunities as well as freelance projects. If you're looking to collaborate or have any questions, feel free to reach out!
                     </p>
                 </div>
