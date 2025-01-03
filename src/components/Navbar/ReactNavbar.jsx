@@ -73,7 +73,7 @@ const ReactNavbar = () => {
                                 </Link>
                             </li>
                         ))}
-                        <a href="https://drive.google.com/file/d/1PP5pYGdPWNV86LlNOBZZLzEcDd7Uu2gK/view?usp=sharing" target="_blank" rel="noopener noreferrer" className='bg-[#E5340F] text-[#444444] rounded-sm mt-3 p-2 cursor-pointer shadow-lg' onClick={dropDown}>
+                        <a href="https://drive.google.com/file/d/1PP5pYGdPWNV86LlNOBZZLzEcDd7Uu2gK/view?usp=sharing" target="_blank" rel="noopener noreferrer" className='bg-[#E5340F] text-[#444444] rounded-sm mt-3 p-2 cursor-pointer shadow-lg block' onClick={dropDown}>
                             <li >
                                 Resume
                             </li>
