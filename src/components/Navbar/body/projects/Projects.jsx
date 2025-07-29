@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 const Projects = () => {
   return (
     <>
-      <div className="grid md:grid-cols-2 grid-cols-1 justify-center  gap-4">
+      <div className="grid md:grid-cols-2 grid-cols-1 justify-center  gap-4 ">
         {projectArr?.map((item, index) => (
-          <div className="border-[#606A92] border-[1px] p-2  rounded-sm">
+          <div className="border-[#606A92] border-[1px] p-2  rounded-md shadow-lg" key={index}>
             <img src={item?.img} alt="" className="h-[15rem] w-full object-fill my-2" />
             <div>
               <div>
