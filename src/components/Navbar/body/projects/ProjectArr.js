@@ -16,6 +16,14 @@ export const projectArr = [
     description: 'This responsive weather app provides accurate and up-to-date weather information for any location worldwide. Built with HTML, CSS, Bootstrap, JavaScript, and a weather API, it offers a user-friendly interface with detailed forecasts, current conditions, and hourly predictions.'
   },
   { 
+    name: 'Netninja-clone', 
+    img: '/netninja.png', 
+    link: 'https://netninnja.netlify.app', 
+    source: 'https://github.com/Abassgold/Netninja-clone', 
+    stack: 'Html, Booststarp & Javascript.', 
+    description: 'This project is a replica of the popular Net Ninja YouTube channel, designed to provide a centralized platform for learning web development. Built with HTML, Bootstrap, and JavaScript, it offers a user-friendly.'
+  },
+  { 
     name: 'Shakarzahi', 
     img: 'https://res.cloudinary.com/abasskola/image/upload/v1727891817/sakazai_vm4xmu.png', 
     link: 'https://boisterous-cuchufli-94d070.netlify.app', 
